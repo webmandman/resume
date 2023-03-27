@@ -42,13 +42,14 @@ const Home: NextPage = () => {
 
                 <div className="pt-4 font-bold text-gray-800 underline">Libraries and Frameworks</div>
                 <ul>
+                  <li>Coldbox MVC</li>
                   <li>Angular</li>
                   <li>Angular Material</li>
+                  <li>Tailwind</li>
                   <li>React.js</li>
                   <li>NextJs</li>
                   <li>Telerik Kendo UI</li>
                   <li>Bootstrap</li>
-                  <li>Coldbox MVC</li>
                   <li>Microsoft Graph API</li>
                   <li>Google Maps API</li>
                   <li>Amazon S3 API</li>
