@@ -18,9 +18,9 @@ const Home: NextPage = () => {
           <div className="pt-8 pb-8 border-b-2 border-gray-200 lg:flex lg:flex-row">
             <div className="pb-8 lg:flex-none w-80 lg:border-r-2 lg:border-gray-200 lg:pr-16 lg:mr-16">
               <div className=" font-bold text-xl uppercase text-gray-700 pb-4">Contact</div>
-              <div className="flex items-center "><span className="material-symbols-outlined mr-2">alternate_email</span><a href="mailto:webmandman@gmail.com">webmandman@gmail.com</a></div>
-              <div className="flex items-center "><span className="material-symbols-outlined mr-2">badge</span><a href="https://github.com/webmandman">github.com/webmandman</a></div>
-              <div className="flex items-center "><span className="material-symbols-outlined mr-2">web</span><a href="https://resume-phi-henna.vercel.app/">resume-phi-henna.vercel.app</a></div>
+              <div className="flex items-center "><span className="material-symbols-outlined mr-2 print:hidden">alternate_email</span><a href="mailto:webmandman@gmail.com">webmandman@gmail.com</a></div>
+              <div className="flex items-center "><span className="material-symbols-outlined mr-2 print:hidden">badge</span><a href="https://github.com/webmandman">github.com/webmandman</a></div>
+              <div className="flex items-center "><span className="material-symbols-outlined mr-2 print:hidden">web</span><a href="https://resume-phi-henna.vercel.app/">resume-phi-henna.vercel.app</a></div>
             </div>
             <div className="lg:grow">
               <div className=" font-bold text-xl uppercase text-gray-700 pb-4">Profile</div>
