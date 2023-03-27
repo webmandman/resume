@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.zigzag3d {
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-image: linear-gradient(#f5f5ff 1px, transparent 1px), linear-gradient(to right, #f5f5ff 1px, #ffffff 1px);
+    background-size: 20px 20px;
+}
