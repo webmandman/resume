@@ -26,7 +26,7 @@ const Home: NextPage = () => {
               <div className=" font-bold text-xl uppercase text-gray-700 pb-4">Contact</div>
               <div className="flex items-center "><span className="material-symbols-outlined mr-2 print:hidden">alternate_email</span><a href="mailto:webmandman@gmail.com">webmandman@gmail.com</a></div>
               <div className="flex items-center "><span className="material-symbols-outlined mr-2 print:hidden">badge</span><a href="https://github.com/webmandman">github.com/webmandman</a></div>
-              <div className="flex items-center "><span className="material-symbols-outlined mr-2 print:hidden">web</span><a href="https://resume-phi-henna.vercel.app/">resume-phi-henna.vercel.app</a></div>
+              <div className="flex items-center "><span className="material-symbols-outlined mr-2 print:hidden">web</span><a href="https://resume-webmandman.vercel.app/">resume-webmandman.vercel.app</a></div>
             </div>
             <div className="lg:grow">
               <div className=" font-bold text-xl uppercase text-gray-700 pb-4">Profile</div>
