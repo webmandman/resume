@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 const Home: NextPage = () => {
@@ -13,7 +14,12 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex w-min min-[375px]:w-auto flex-col items-center sm:p-16 zigzag3d font-monse text-gray-600">
         <div className="container flex flex-col shadow-xl shadow-[#b6b6b6] bg-white p-8 sm:p-16 pt-8">
-          <div className=" text-3xl sm:text-7xl font-semibold uppercase text-center pb-10 "><span className="text-gray-900">Daniel</span> <span className="">Mejia</span></div>
+          <div className="flex flex-col lg:flex-row justify-center place-items-center gap-2 md:gap-7  text-4xl sm:text-5xl md:text-7xl font-semibold uppercase text-center pb-10">
+            
+            <Image className="rounded-full w-24 h-24 md:w-40 md:h-40 lg:w-56 lg:h-56" src="https://www.github.com/webmandman.png" alt="Daniel Mejia's profile picture" width={150} height={150}/>
+            
+            <div className=""><span className="text-gray-900">Daniel</span> <span className="">Mejia</span></div>
+          </div>
           <div className=" text-xl font-bold text-center uppercase border-t-2 border-b-2 border-gray-200 p-4">Web Developer</div>
           <div className="pt-8 pb-8 border-b-2 border-gray-200 lg:flex lg:flex-row">
             <div className="pb-8 lg:flex-none w-80 lg:border-r-2 lg:border-gray-200 lg:pr-16 lg:mr-16">
