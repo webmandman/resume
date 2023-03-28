@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
-      <main className="flex min-h-screen flex-col items-center sm:p-16 zigzag3d font-monse text-gray-600">
+      <main className="flex w-min min-[375px]:w-auto flex-col items-center sm:p-16 zigzag3d font-monse text-gray-600">
         <div className="container flex flex-col shadow-xl shadow-[#b6b6b6] bg-white p-8 sm:p-16 pt-8">
           <div className=" text-3xl sm:text-7xl font-semibold uppercase text-center pb-10 "><span className="text-gray-900">Daniel</span> <span className="">Mejia</span></div>
           <div className=" text-xl font-bold text-center uppercase border-t-2 border-b-2 border-gray-200 p-4">Web Developer</div>
