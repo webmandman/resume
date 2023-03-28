@@ -94,7 +94,7 @@ const Home: NextPage = () => {
               <div className="font-bold text-gray-800 pt-4">Web Developer</div>
               <div className="text-sm">August 2008 - March 2014 (5 years 8 months)</div>
               <div className="text-sm">Irvine, CA</div>
-              <div className="pt-2">Designed, created, and maintained full-stack websites for consumers world-wide. Skilled in Coldfusion, SQL, Javascript, HTML, and CSS. Worked closely with third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows.</div>
+              <div className="pt-2">Designed, created, and maintained full-stack websites for consumers world-wide. Skilled in Coldfusion, SQL, Javascript, HTML, and CSS. In-depth knowledge of many third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows.</div>
               <div className="font-bold text-gray-800 pt-4">Web Designer</div>
               <div className="text-sm">August 2006 - August 2008 (2 years 1 month)</div>
               <div className="text-sm">Irvine, CA</div>
