@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           </div>
           <div className=" text-xl font-bold text-center uppercase border-t-2 border-b-2 border-gray-200 p-4">Web Developer</div>
           <div className="pt-8 pb-8 border-b-2 border-gray-200 lg:flex lg:flex-row">
-            <div className="pb-8 lg:flex-none w-80 lg:border-r-2 lg:border-gray-200 lg:pr-16 lg:mr-16">
+            <div className="pb-8 lg:flex-none w-96 lg:border-r-2 lg:border-gray-200 lg:pr-16 lg:mr-16">
               <div className=" font-bold text-xl uppercase text-gray-700 pb-4">Contact</div>
               <div className="flex items-center "><span className="material-symbols-outlined mr-2 print:hidden">alternate_email</span><a href="mailto:webmandman@gmail.com">webmandman@gmail.com</a></div>
               <div className="flex items-center "><span className="material-symbols-outlined mr-2 print:hidden">badge</span><a href="https://github.com/webmandman">github.com/webmandman</a></div>
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="pt-8 pb-8 border-b-2 border-gray-200 lg:flex lg:flex-row">
-            <div className="pb-8 lg:flex-none md:w-80 lg:border-r-2 lg:border-gray-200 lg:pr-16 lg:mr-16">
+            <div className="pb-8 lg:flex-none md:w-96 lg:border-r-2 lg:border-gray-200 lg:pr-16 lg:mr-16">
               <div className="border-b-2 pb-8">
                 <div className=" font-bold text-xl uppercase text-gray-700">Skills</div>
                 
