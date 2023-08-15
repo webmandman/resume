@@ -85,7 +85,7 @@ const Home: NextPage = () => {
               <div className="pt-2">Work closely with stakeholders of Psomas to improve accounting and business analysis. Create tools and reports to help leaders of the company manage their teams and finances. Manage a team(1 Web Developer and 1 Jr Web Developer) of web developers. </div>
               
               <div className="font-bold text-gray-800 pt-4">Senior Web Developer</div>
-              <div className="text-sm">August 2021 - March 2023 (1 year 8 months)</div>
+              <div className="text-sm">August 2021 - December 2022 (1 year 8 months)</div>
               <div className="text-sm">Santa Ana, California, United States</div>
               <div className="pt-2">Plan, Design, Build and deliver production ready applications.  Work closely with other senior developers and leaders of the company.</div>
 
