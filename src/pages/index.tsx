@@ -20,7 +20,7 @@ const Home: NextPage = () => {
             
             <div className=""><span className="text-gray-900">Daniel</span> <span className="">Mejia</span></div>
           </div>
-          <div className=" text-xl font-bold text-center uppercase border-t-2 border-b-2 border-gray-200 p-4">Web Developer</div>
+          <div className=" text-xl font-bold text-center uppercase border-t-2 border-b-2 border-gray-200 p-4">Web Applications Development Manager</div>
           <div className="pt-8 pb-8 border-b-2 border-gray-200 lg:flex lg:flex-row">
             <div className="pb-8 lg:flex-none w-96 lg:border-r-2 lg:border-gray-200 lg:pr-16 lg:mr-16">
               <div className=" font-bold text-xl uppercase text-gray-700 pb-4">Contact</div>
@@ -79,10 +79,10 @@ const Home: NextPage = () => {
               <div className="pt-4 font-bold text-gray-800 underline">Psomas</div>
               <div>9 years 1 month</div>
               
-              <div className="font-bold text-gray-800 pt-4">Web Team Manager</div>
-              <div className="text-sm">January 2023 - Present (3 months)</div>
+              <div className="font-bold text-gray-800 pt-4">Web Applications Development Manager</div>
+              <div className="text-sm">January 2023 - Present (8 months)</div>
               <div className="text-sm">Santa Ana, California, United States</div>
-              <div className="pt-2">Work closely with stakeholders of Psomas to improve accounting and business analysis. Create tools and reports to help leaders of the company manage their teams and finances. Manage a small team of web developers. </div>
+              <div className="pt-2">Work closely with stakeholders of Psomas to improve accounting and business analysis. Create tools and reports to help leaders of the company manage their teams and finances. Manage a team(1 Web Developer and 1 Jr Web Developer) of web developers. </div>
               
               <div className="font-bold text-gray-800 pt-4">Senior Web Developer</div>
               <div className="text-sm">August 2021 - March 2023 (1 year 8 months)</div>
