@@ -85,12 +85,12 @@ const Home: NextPage = () => {
               <div className="pt-2">Work closely with stakeholders of Psomas to improve accounting and business analysis. Create tools and reports to help leaders of the company manage their teams and finances. Manage a team(1 Web Developer and 1 Jr Web Developer) of web developers. </div>
               
               <div className="font-bold text-gray-800 pt-4">Senior Web Developer</div>
-              <div className="text-sm">August 2021 - December 2022 (1 year 8 months)</div>
+              <div className="text-sm">August 2021 - December 2022 (1 year 4 months)</div>
               <div className="text-sm">Santa Ana, California, United States</div>
-              <div className="pt-2">Plan, Design, Build and deliver production ready applications.  Work closely with other senior developers and leaders of the company.</div>
+              <div className="pt-2">Plan, Design, Build and deliver production ready applications.  Work closely with one other senior developer, and leaders of the company.</div>
 
               <div className="font-bold text-gray-800 pt-4">Web Developer</div>
-              <div className="text-sm">March 2014 - January 2022 (7 years 11 months)</div>
+              <div className="text-sm">March 2014 - September 2021 (7 years 6 months)</div>
               <div className="text-sm">Santa ana, california</div>
               <div className="pt-2">Designed, created, and maintained full-stack websites at the enterprise level. Skilled in  Coldfusion, SQL, Javascript, HTML, and CSS. In-depth knowledge of many third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows. </div>
               
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
               <div>7 years 8 months</div>
 
               <div className="font-bold text-gray-800 pt-4">Web Developer</div>
-              <div className="text-sm">August 2008 - March 2014 (5 years 8 months)</div>
+              <div className="text-sm">August 2008 - April 2014 (5 years 8 months)</div>
               <div className="text-sm">Irvine, CA</div>
               <div className="pt-2">Designed, created, and maintained full-stack websites for consumers world-wide. Skilled in Coldfusion, SQL, Javascript, HTML, and CSS. In-depth knowledge of many third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows.</div>
               <div className="font-bold text-gray-800 pt-4">Web Designer</div>
