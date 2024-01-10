@@ -77,7 +77,7 @@ const Home: NextPage = () => {
               <div className=" font-bold text-xl uppercase text-gray-700">Experience</div>
 
               <div className="pt-4 font-bold text-gray-800 underline">Psomas</div>
-              <div>9 years 1 month</div>
+              <div>Since March 2014</div>
               
               <div className="font-bold text-gray-800 pt-4">Web Applications Development Manager</div>
               <div className="text-sm">Since January 2023</div>
