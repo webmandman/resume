@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             </div>
             <div className="lg:grow">
               <div className=" font-bold text-xl uppercase text-gray-700 pb-4">Profile</div>
-              <div className="">Experienced Web Developer with a demonstrated history of working in IT for the civil engineering industry, and personal care ecommerce industry. Advanced proficiency in Javascript, HTML, CSS, Coldfusion, and SQL - all of which are backed by at least 8+ years of experience. Expert in creating full stack applications for enterprises and consumers.</div>
+              <div className="">Experienced Web Developer with a demonstrated history of working in IT for the civil engineering industry, and personal care ecommerce industry. Advanced proficiency in JavaScript, HTML, CSS, CFML, and SQL - all of which are backed by at least 8+ years of experience. Expert in creating full stack applications for enterprises and consumers.</div>
             </div>
           </div>
           <div className="pt-8 pb-8 border-b-2 border-gray-200 lg:flex lg:flex-row">
