@@ -42,7 +42,7 @@ const Home: NextPage = () => {
                 <ul>
                   <li>JavaScript</li>
                   <li>TypeScript</li>
-                  <li>Coldfusion/CFML</li>
+                  <li>CFML</li>
                   <li>SQL</li>
                 </ul>
 
