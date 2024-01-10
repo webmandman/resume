@@ -104,7 +104,7 @@ const Home: NextPage = () => {
               <div className="font-bold text-gray-800 pt-4">Web Designer</div>
               <div className="text-sm">August 2006 - August 2008 (2 years 1 month)</div>
               <div className="text-sm">Irvine, CA</div>
-              <div className="pt-2">Designed, created, and maintained enterprise media and websites. Designed, created, and maintained consumer-based websites. Worked closely with IT and Marketing department. Skilled in Flash, ActionScript, 3d modeling and design, Photoshop, HTML, Javascript, and CSS.</div>
+              <div className="pt-2">Designed, created, and maintained enterprise media and websites. Designed, created, and maintained consumer-based websites. Worked closely with IT and Marketing department. Skilled in Flash, ActionScript, 3d modeling and design, Photoshop, HTML, JavaScript, and CSS.</div>
             </div>
           </div>
 
