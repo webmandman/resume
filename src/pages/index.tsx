@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Daniel Mejia&apos;s Resume</title>
-        <meta name="description" content="Daniel Mejia&apos;s Resume. Experienced Web Developer with a demonstrated history of working in IT for the civil engineering industry, and personal care ecommerce industry. Advanced proficiency in Javascript, HTML, CSS, Coldfusion, and SQL - all of which are backed by at least 8+ years of experience. Expert in creating full stack applications for enterprises and consumers." />
+        <meta name="description" content="Daniel Mejia&apos;s Resume. Experienced Web Developer with a demonstrated history of working in IT for the civil engineering industry, and personal care ecommerce industry. Advanced proficiency in JavaScript, HTML, CSS, CFML, and SQL - all of which are backed by at least 8+ years of experience. Expert in creating full stack applications for enterprises and consumers." />
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
               <div className="font-bold text-gray-800 pt-4">Web Developer</div>
               <div className="text-sm">March 2014 - September 2021 (7 years 6 months)</div>
               <div className="text-sm">Santa ana, california</div>
-              <div className="pt-2">Designed, created, and maintained full-stack websites at the enterprise level. Skilled in  Coldfusion, SQL, Javascript, HTML, and CSS. In-depth knowledge of many third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows. </div>
+              <div className="pt-2">Designed, created, and maintained full-stack websites at the enterprise level. Skilled in  CFML, SQL, JavaScript, HTML, and CSS. In-depth knowledge of many third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows. </div>
               
               <div className="pt-4 font-bold text-gray-800 underline">Nikken International, Inc.</div>
               <div>7 years 8 months</div>
@@ -100,7 +100,7 @@ const Home: NextPage = () => {
               <div className="font-bold text-gray-800 pt-4">Web Developer</div>
               <div className="text-sm">August 2008 - April 2014 (5 years 8 months)</div>
               <div className="text-sm">Irvine, CA</div>
-              <div className="pt-2">Designed, created, and maintained full-stack websites for consumers world-wide. Skilled in Coldfusion, SQL, Javascript, HTML, and CSS. In-depth knowledge of many third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows.</div>
+              <div className="pt-2">Designed, created, and maintained full-stack websites for consumers world-wide. Skilled in CFML, SQL, JavaScript, HTML, and CSS. In-depth knowledge of many third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows.</div>
               <div className="font-bold text-gray-800 pt-4">Web Designer</div>
               <div className="text-sm">August 2006 - August 2008 (2 years 1 month)</div>
               <div className="text-sm">Irvine, CA</div>
