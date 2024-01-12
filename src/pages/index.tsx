@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Daniel Mejia&apos;s Resume</title>
-        <meta name="description" content="Daniel Mejia&apos;s Resume. Experienced Web Developer with a demonstrated history of working in IT for the civil engineering industry, and personal care ecommerce industry. Advanced proficiency in JavaScript, HTML, CSS, CFML, and SQL - all of which are backed by at least 8+ years of experience. Expert in creating full stack applications for enterprises and consumers." />
+        <meta name="description" content="Daniel Mejia&apos;s Resume. Experienced Web Developer with a demonstrated history of working in IT for the civil engineering industry, and personal care ecommerce industry. Advanced proficiency in JavaScript, HTML, CSS, CFML, and SQL - all of which are backed by at least 8+ years of experience. Expert in creating full-stack applications for enterprises and consumers." />
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             </div>
             <div className="lg:grow">
               <div className=" font-bold text-xl uppercase text-gray-700 pb-4">Profile</div>
-              <div className="">Experienced Web Developer with a demonstrated history of working in IT for the civil engineering industry, and personal care ecommerce industry. Advanced proficiency in JavaScript, HTML, CSS, CFML, and SQL - all of which are backed by at least 8+ years of experience. Expert in creating full stack applications for enterprises and consumers.</div>
+              <div className="">Experienced Web Developer with a demonstrated history of working in IT for the civil engineering industry, and personal care ecommerce industry. Advanced proficiency in JavaScript, HTML, CSS, CFML, and SQL - all of which are backed by at least 8+ years of experience. Expert in creating full-stack applications for enterprises and consumers.</div>
             </div>
           </div>
           <div className="pt-8 pb-8 border-b-2 border-gray-200 lg:flex lg:flex-row">
@@ -81,17 +81,17 @@ const Home: NextPage = () => {
               
               <div className="font-bold text-gray-800 pt-4">Web Applications Development Manager</div>
               <div className="text-sm">Since January 2023</div>
-              <div className="text-sm">Santa Ana, California, United States</div>
+              <div className="text-sm">Santa Ana, CA, United States</div>
               <div className="pt-2">Work closely with stakeholders of Psomas to improve accounting and business analysis. Create tools and reports to help leaders of the company manage their teams and finances. Manage a team(1 Web Developer and 1 Jr Web Developer) of web developers. </div>
               
               <div className="font-bold text-gray-800 pt-4">Senior Web Developer</div>
               <div className="text-sm">August 2021 - December 2022 (1 year 4 months)</div>
-              <div className="text-sm">Santa Ana, California, United States</div>
+              <div className="text-sm">Santa Ana, CA, United States</div>
               <div className="pt-2">Plan, Design, Build and deliver production ready applications.  Work closely with one other senior developer, and leaders of the company.</div>
 
               <div className="font-bold text-gray-800 pt-4">Web Developer</div>
               <div className="text-sm">March 2014 - September 2021 (7 years 6 months)</div>
-              <div className="text-sm">Santa ana, california</div>
+              <div className="text-sm">Santa ana, CA</div>
               <div className="pt-2">Designed, created, and maintained full-stack websites at the enterprise level. Skilled in  CFML, SQL, JavaScript, HTML, and CSS. In-depth knowledge of many third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows. </div>
               
               <div className="pt-4 font-bold text-gray-800 underline">Nikken International, Inc.</div>
