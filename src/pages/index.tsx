@@ -81,12 +81,12 @@ const Home: NextPage = () => {
               
               <div className="font-bold text-gray-800 pt-4">Web Applications Development Manager</div>
               <div className="text-sm">Since January 2023</div>
-              <div className="text-sm">Santa Ana, CA, United States</div>
+              <div className="text-sm">Santa Ana, CA</div>
               <div className="pt-2">Work closely with stakeholders of Psomas to improve accounting and business analysis. Create tools and reports to help leaders of the company manage their teams and finances. Manage a team(1 Web Developer and 1 Jr Web Developer) of web developers. </div>
               
               <div className="font-bold text-gray-800 pt-4">Senior Web Developer</div>
               <div className="text-sm">August 2021 - December 2022 (1 year 4 months)</div>
-              <div className="text-sm">Santa Ana, CA, United States</div>
+              <div className="text-sm">Santa Ana, CA</div>
               <div className="pt-2">Plan, Design, Build and deliver production ready applications.  Work closely with one other senior developer, and leaders of the company.</div>
 
               <div className="font-bold text-gray-800 pt-4">Web Developer</div>
