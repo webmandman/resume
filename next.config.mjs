@@ -8,6 +8,9 @@
 const config = {
     reactStrictMode: true,
 
+    // Geist fonts need transpiling under the Pages Router.
+    transpilePackages: ['geist'],
+
     images: {
         domains: ['www.github.com'],
     },
