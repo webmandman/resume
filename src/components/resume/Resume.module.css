@@ -265,6 +265,25 @@
   color: var(--btn-fg);
 }
 
+/* Phones: icon-only buttons. The label is visually hidden, not removed,
+   so screen readers still announce it. */
+@media (max-width: 767px) {
+  .root .btn,
+  .root .btnPrimary {
+    width: 44px;
+    padding: 0;
+    justify-content: center;
+  }
+  .btnLabel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
 /* ---------- Main layout ---------- */
 
 .main {

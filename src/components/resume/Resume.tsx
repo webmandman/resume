@@ -37,15 +37,15 @@ export default function Resume() {
               <div className={cx(styles.actions, styles.noprint)}>
                 <a className={cx(styles.btn, styles.btnPrimary)} href={profile.pdf} download>
                   <DownloadIcon />
-                  Download PDF
+                  <span className={styles.btnLabel}>Download PDF</span>
                 </a>
                 <a className={styles.btn} href={`mailto:${profile.email}`}>
                   <MailIcon />
-                  Email
+                  <span className={styles.btnLabel}>Email</span>
                 </a>
                 <a className={styles.btn} href={profile.github} target="_blank" rel="noopener noreferrer">
                   <GitHubIcon />
-                  GitHub
+                  <span className={styles.btnLabel}>GitHub</span>
                 </a>
               </div>
             </div>
