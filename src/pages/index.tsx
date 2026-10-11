@@ -1,114 +1,234 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+
+const summary =
+        "Hands-on software engineering professional with extensive experience architecting, developing, integrating, and supporting enterprise applications. Combines full-stack engineering expertise with technical leadership, REST API integration, workflow automation, cloud deployment, and production troubleshooting. Experienced in translating business requirements into reliable software, reverse-engineering legacy data structures, and establishing engineering standards. Currently leads two developers while remaining directly responsible for complex implementation work and technical architecture.";
+
+const skills: [string, string[]][] = [
+        ["Languages", ["JavaScript", "TypeScript", "SQL", "Python (automation)", "CFML"]],
+        ["Frameworks & UI", ["Next.js", "React", "Angular", "AngularJS", "ColdBox", "Telerik UI", "HTML5", "CSS3"]],
+        ["Integration & Data", ["REST APIs", "Third-party API integration", "Microsoft SQL Server", "Complex SQL queries", "Stored procedures", "Redis distributed caching", "Data transformation", "Workflow automation"]],
+        ["Cloud & DevOps", ["Microsoft Azure", "Azure Blob Storage", "Azure WAF", "Containerized applications", "Amazon S3", "GitHub", "CI/CD", "Pull-request workflows"]],
+        ["Testing & Troubleshooting", ["Vitest", "Automated testing", "Root-cause analysis", "Production debugging", "Integration troubleshooting", "Security testing coordination"]],
+        ["Design & Documentation", ["System architecture", "User-flow & workflow diagrams", "Automation diagrams", "Business-process mapping", "Developer documentation", "Microsoft Visio", "Balsamiq", "Excalidraw"]],
+];
+
+type Role = { title: string; dates: string; intro?: string; heading?: string; bullets: [string | null, string][] };
+type Company = { name: string; meta: string; roles: Role[] };
+
+const experience: Company[] = [
+        {
+                name: "Psomas",
+                meta: "March 2014–Present · Civil Engineering, Environmental, Surveying & Construction",
+                roles: [
+                        {
+                                title: "Web Applications Development Manager",
+                                dates: "January 2023–Present",
+                                intro: "Lead a team of two developers while remaining hands-on in full-stack development, architecture, complex implementation, and production support. Establish engineering standards, review code, mentor developers, and translate business requirements into technical solutions in collaboration with end users and company leadership.",
+                                heading: "Selected Engineering Accomplishments",
+                                bullets: [
+                                        ["Business planning and reporting", "Architected and developed Business Evolution, an enterprise planning and reporting platform launched in 2022 and continuously enhanced. Supports salary, expense, revenue, and project-sharing plans, along with ongoing actual-versus-budget reporting for more than 228 unique planning and special-access users."],
+                                        ["Full-stack architecture", "Own the platform's frontend, backend services, business logic, SQL data layer, integrations, and production environment, using React, Telerik UI, BoxLang/ColdBox RESTful services, SQL Server, Redis, and Azure-hosted containers."],
+                                        ["Legacy system analysis", "Reverse-engineered undocumented Deltek Vision database structures and inherited SQL reports, mapping data relationships and validating results with Accounting and the CFO to deliver reliable reporting."],
+                                        ["Business process automation", "Automated a longstanding budget-export process into Deltek Vantagepoint's planning module, replacing a recurring manual workflow maintained by successive CFOs for more than 20 years."],
+                                        ["Enterprise integrations", "Design and maintain employee and project data integrations across UKG UltiPro, Microsoft Entra ID, Deltek Vantagepoint, DataBasics, Unanet, and internal applications using APIs, scheduled database queries, and runtime SQL."],
+                                        ["Python automation", "Built and maintain a production automation process that retrieves third-party survey data and generates Word reports; the process has been running for approximately two years."],
+                                        ["Modern application engineering", "Develop full-stack applications in a Next.js/Turborepo monorepo, using Vitest for automated testing. Handle complex implementation work, establish shared standards, and coordinate module ownership across the development team."],
+                                        ["Production reliability and security", "Investigate root causes across frontend, backend, databases, and integrations. Maintain GitHub pull-request workflows, automated CI/CD, development and staging environments, and additional testing and approval gates for selected critical applications."],
+                                        ["Documentation and knowledge transfer", "Create system documentation, user-flow diagrams, workflows, automation diagrams, and business-process maps to improve maintainability and help new developers contribute effectively."],
+                                ],
+                        },
+                        {
+                                title: "Senior Web Developer",
+                                dates: "August 2021–December 2022",
+                                bullets: [
+                                        [null, "Designed, developed, and maintained full-stack enterprise applications, taking ownership of frontend interfaces, backend services, database logic, and system integrations."],
+                                        [null, "Made technical architecture and technology-stack decisions while collaborating directly with business stakeholders to translate requirements into production applications."],
+                                        [null, "Delivered application enhancements and supported production systems, progressively assuming broader technical ownership ahead of promotion to management."],
+                                ],
+                        },
+                        {
+                                title: "Web Developer",
+                                dates: "March 2014–September 2021",
+                                bullets: [
+                                        [null, "Developed and maintained enterprise web applications and internal business systems using JavaScript, CFML, SQL, HTML, and CSS."],
+                                        [null, "Integrated third-party services and enterprise systems to automate workflows and support business operations."],
+                                        [null, "Collaborated with Accounting, Operations, IT, Marketing, and other end users to gather requirements and deliver practical software solutions."],
+                                ],
+                        },
+                ],
+        },
+        {
+                name: "Nikken International, Inc.",
+                meta: "August 2006–April 2014 · Irvine, California",
+                roles: [
+                        {
+                                title: "Web Developer",
+                                dates: "August 2008–April 2014",
+                                bullets: [
+                                        ["International e-commerce", "Served as sole developer for an international e-commerce platform supporting more than 60 products across three countries. Built the Angular frontend and CFML backend, including payment processing, database integration, order tracking, purchase history, and deployment."],
+                                        ["Consultant attribution", "Implemented customer-to-consultant assignment and personalized referral-link workflows supporting the company's multilevel marketing business model."],
+                                        ["Multilingual applications", "Delivered English, Spanish, and French experiences for international customers and consultants."],
+                                        ["Consultant business portal", "Independently developed and maintained MyNikken.com, a business portal featuring business reports, customer history, resources, event planning, and awards and recognition, using ASP.NET and custom HTML, CSS, and JavaScript."],
+                                        [null, "Worked with the IT Director and assistant to gather requirements and translate business needs into production applications running on company-managed infrastructure."],
+                                ],
+                        },
+                        {
+                                title: "Web Designer",
+                                dates: "August 2006–August 2008",
+                                bullets: [
+                                        [null, "Designed and maintained websites and interactive web experiences in collaboration with IT and Marketing, building the foundation for progression into full-stack application development."],
+                                ],
+                        },
+                ],
+        },
+];
+
+const contacts = [
+        ["email", "webmandman@gmail.com", "mailto:webmandman@gmail.com"],
+        ["github", "github.com/webmandman", "https://github.com/webmandman"],
+        ["web", "danielmejia.dev", "https://danielmejia.dev"],
+];
+
+const SectionTitle = ({ n, children }: { n: string; children: string }) => (
+        <h2 className="mb-6 flex items-center gap-3 font-mono text-sm uppercase tracking-[0.2em] text-emerald-400 print:text-emerald-700">
+                <span className="text-slate-500">{n}.</span>
+                {children}
+                <span className="h-px flex-1 bg-gradient-to-r from-emerald-500/40 to-transparent" />
+        </h2>
+);
 
 const Home: NextPage = () => {
         return (
                 <>
                         <Head>
-                                <title>Daniel Mejia&apos;s Resume</title>
-                                <meta name="description" content="Daniel Mejia&apos;s Resume. Experienced Web Developer with a demonstrated history of working in IT for the civil engineering industry, and personal care ecommerce industry. Advanced proficiency in JavaScript, HTML, CSS, CFML, and SQL - all of which are backed by at least 8+ years of experience. Expert in creating full-stack applications for enterprises and consumers." />
+                                <title>Daniel Mejia Vera — Full-Stack Engineer & Technical Lead</title>
+                                <meta name="description" content={summary} />
                                 <link rel="icon" href="/favicon.ico" />
-
                         </Head>
-                        <main className="flex w-min min-[375px]:w-auto flex-col items-center sm:p-16 zigzag3d font-monse text-gray-600">
-                                <div className="container flex flex-col shadow-xl shadow-[#b6b6b6] bg-white p-8 sm:p-16 pt-8">
-                                        <div className="flex flex-col lg:flex-row justify-center place-items-center gap-2 md:gap-7  text-4xl sm:text-5xl md:text-7xl font-semibold uppercase text-center pb-10">
-
-                                                <Image className="rounded-full w-24 h-24 md:w-40 md:h-40 lg:w-56 lg:h-56" src="https://www.github.com/webmandman.png" alt="Daniel Mejia's profile picture" width={150} height={150} />
-
-                                                <div className=""><span className="text-gray-900">Daniel</span> <span className="">Mejia Vera</span></div>
-                                        </div>
-                                        <div className=" text-xl font-bold text-center uppercase border-t-2 border-b-2 border-gray-200 p-4">Web Applications Development Manager</div>
-                                        <div className="pt-8 pb-8 border-b-2 border-gray-200 lg:flex lg:flex-row">
-                                                <div className="pb-8 lg:flex-none w-96 lg:border-r-2 lg:border-gray-200 lg:pr-16 lg:mr-16">
-                                                        <div className=" font-bold text-xl uppercase text-gray-700 pb-4">Contact</div>
-                                                        <div className="flex items-center "><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20" className='mr-2 print:hidden'><path d="M480 939.999q-75.258 0-141.876-28.51-66.619-28.509-115.861-77.752-49.243-49.242-77.752-115.861-28.51-66.618-28.51-141.876 0-76.218 28.51-142.356 28.509-66.139 77.752-115.381 49.242-49.243 115.861-77.752 66.618-28.51 141.876-28.51 76.218 0 142.356 28.51 66.139 28.509 115.381 77.752 49.243 49.242 77.752 115.381 28.51 66.138 28.51 142.356v50.769q0 50.614-35.616 85.922-35.615 35.308-86.657 35.308-35.65 0-62.419-18.731t-43.692-50.193q-25.692 31.308-58.923 50.116-33.23 18.808-76.956 18.808-71.493 0-121.614-50.265-50.121-50.264-50.121-121.96t50.265-121.735q50.264-50.038 121.96-50.038t121.735 50.198Q651.999 504.398 651.999 576v50.769q0 27.692 20.192 48.462Q692.384 696 721.999 696q29.616 0 49.808-20.769Q792 654.461 792 626.769V576q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91h192v51.999H480ZM480 696q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z" /></svg><a href="mailto:webmandman@gmail.com">webmandman@gmail.com</a></div>
-                                                        <div className="flex items-center "><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20" className='mr-2 print:hidden'><path d="M180.309 939.999q-27.008 0-45.658-18.65-18.65-18.65-18.65-45.658V468.309q0-27.008 18.65-45.658 18.65-18.65 45.658-18.65h223.692V264q0-21.622 15.188-36.811 15.189-15.188 36.811-15.188h48q21.622 0 36.811 15.188 15.188 15.189 15.188 36.811v140.001h223.692q27.008 0 45.658 18.65 18.65 18.65 18.65 45.658v407.382q0 27.008-18.65 45.658-18.65 18.65-45.658 18.65H180.309Zm0-51.999h599.382q5.385 0 8.847-3.462 3.462-3.462 3.462-8.847V468.309q0-5.385-3.462-8.847-3.462-3.462-8.847-3.462H555.999q0 24.23-15.958 38.114-15.957 13.885-39.887 13.885h-40.308q-23.93 0-39.887-14.035Q404.001 479.93 404.001 456H180.309q-5.385 0-8.847 3.462-3.462 3.462-3.462 8.847v407.382q0 5.385 3.462 8.847 3.462 3.462 8.847 3.462Zm65.845-83.539h227.692v-16.846q0-16.091-8.539-29.59-8.538-13.498-23.615-21.025-19.615-7.615-39.731-11.923-20.115-4.308-41.961-4.308t-41.961 4.308q-20.116 4.308-39.731 12.394-15.077 6.76-23.615 20.352-8.539 13.591-8.539 29.792v16.846ZM576 755.691h144V696H576v59.691ZM360 696q22.307 0 38.077-15.769 15.769-15.769 15.769-38.077 0-22.307-15.769-38.076-15.77-15.769-38.077-15.769t-38.077 15.769q-15.769 15.769-15.769 38.076 0 22.308 15.769 38.077Q337.693 696 360 696Zm216-48h144v-59.691H576V648ZM456 456h48V264h-48v192Zm24 216Z" /></svg><a href="https://github.com/webmandman">github.com/webmandman</a></div>
-                                                        <div className="flex items-center "><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20" className='mr-2 print:hidden'><path d="M180.309 843.999q-27.008 0-45.658-18.662-18.65-18.662-18.65-45.686V372.025q0-27.024 18.65-45.524t45.658-18.5h599.382q27.008 0 45.658 18.662 18.65 18.662 18.65 45.686v407.626q0 27.024-18.65 45.524t-45.658 18.5H180.309Zm0-51.999h405.692V664.307H168v115.384q0 4.616 3.846 8.463 3.847 3.846 8.463 3.846Zm457.69 0h141.692q4.616 0 8.463-3.846 3.846-3.847 3.846-8.463V484.616H637.999V792ZM168 612.309h418.001V484.616H168v127.693Z" /></svg><a href="https://www.danielmejia.dev/">danielmejia.dev</a></div>
-                                                </div>
-                                                <div className="lg:grow">
-                                                        <div className=" font-bold text-xl uppercase text-gray-700 pb-4">Profile</div>
-                                                        <div className="">Experienced Web Developer with a demonstrated history of working in IT for the civil engineering industry, and personal care ecommerce industry. Advanced proficiency in JavaScript, HTML, CSS, CFML, and SQL - all of which are backed by at least 8+ years of experience. Expert in creating full-stack applications for enterprises and consumers.</div>
-                                                </div>
-                                        </div>
-                                        <div className="pt-8 pb-8 border-b-2 border-gray-200 lg:flex lg:flex-row">
-                                                <div className="pb-8 lg:flex-none md:w-96 lg:border-r-2 lg:border-gray-200 lg:pr-16 lg:mr-16">
-                                                        <div className="border-b-2 pb-8">
-                                                                <div className=" font-bold text-xl uppercase text-gray-700">Skills</div>
-
-                                                                <div className="pt-4 font-bold text-gray-800 underline">Programming Languages</div>
-                                                                <ul>
-                                                                        <li>JavaScript</li>
-                                                                        <li>TypeScript</li>
-                                                                        <li>CFML</li>
-                                                                        <li>SQL</li>
-                                                                </ul>
-
-                                                                <div className="pt-4 font-bold text-gray-800 underline">Libraries and Frameworks</div>
-                                                                <ul>
-                                                                        <li>Coldbox MVC</li>
-                                                                        <li>Angular</li>
-                                                                        <li>Angular Material</li>
-                                                                        <li>Tailwind</li>
-                                                                        <li>React.js</li>
-                                                                        <li>NextJs</li>
-                                                                        <li>Telerik Kendo UI</li>
-                                                                        <li>Bootstrap</li>
-                                                                        <li>Microsoft Graph API</li>
-                                                                        <li>Google Maps API</li>
-                                                                        <li>Amazon S3 API</li>
-                                                                        <li>Expensify API</li>
-                                                                        <li>Smarty Streets API</li>
-                                                                        <li>Twilio SendGrid Email/SMS API</li>
-                                                                        <li>UKG Ultipro API/Soap</li>
-                                                                </ul>
-
-                                                        </div>
-                                                        <div className="border-b-2 pb-8 pt-8">
-                                                                <div className=" font-bold text-xl uppercase text-gray-700">Education</div>
-
-                                                                <div className="pt-4 font-bold text-gray-800 underline">Self-taught</div>
-                                                                <div>Web Design and Programming · (2002 - 2006)</div>
+                        <main className="grid-bg min-h-screen px-4 py-10 font-sans text-slate-300 sm:px-8 sm:py-16 print:p-0 print:text-slate-800">
+                                <div className="mx-auto max-w-5xl">
+                                        {/* Header */}
+                                        <header className="overflow-hidden rounded-xl border border-slate-800 bg-slate-950/70 shadow-2xl shadow-emerald-500/5 backdrop-blur print:border-0 print:bg-white print:shadow-none">
+                                                <div className="flex items-center border-b border-slate-800 pl-4 print:hidden">
+                                                        <span className="font-mono text-xs text-emerald-400">
+                                                                <span className="text-slate-500">PS C:\Users\daniel&gt;</span> whoami<span className="cursor" />
+                                                        </span>
+                                                        <div className="ml-auto flex text-slate-400" aria-hidden="true">
+                                                                <span className="flex h-9 w-12 items-center justify-center hover:bg-white/10">
+                                                                        <svg width="10" height="10" viewBox="0 0 10 10"><path d="M0 5h10" stroke="currentColor" /></svg>
+                                                                </span>
+                                                                <span className="flex h-9 w-12 items-center justify-center hover:bg-white/10">
+                                                                        <svg width="10" height="10" viewBox="0 0 10 10"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" fill="none" stroke="currentColor" /></svg>
+                                                                </span>
+                                                                <span className="flex h-9 w-12 items-center justify-center rounded-tr-xl hover:bg-[#c42b1c] hover:text-white">
+                                                                        <svg width="10" height="10" viewBox="0 0 10 10"><path d="M0 0l10 10M10 0L0 10" stroke="currentColor" /></svg>
+                                                                </span>
                                                         </div>
                                                 </div>
-                                                <div className="lg:grow">
-                                                        <div className=" font-bold text-xl uppercase text-gray-700">Experience</div>
-
-                                                        <div className="pt-4 font-bold text-gray-800 underline">Psomas</div>
-                                                        <div>Since March 2014</div>
-
-                                                        <div className="font-bold text-gray-800 pt-4">Web Applications Development Manager</div>
-                                                        <div className="text-sm">Since January 2023</div>
-                                                        <div className="text-sm">Santa Ana, CA</div>
-                                                        <div className="pt-2">Work closely with stakeholders of Psomas to improve accounting and business analysis. Create tools and reports to help leaders of the company manage their teams and finances. Manage a team(1 Web Developer and 1 Jr Web Developer) of web developers. </div>
-
-                                                        <div className="font-bold text-gray-800 pt-4">Senior Web Developer</div>
-                                                        <div className="text-sm">August 2021 - December 2022 (1 year 4 months)</div>
-                                                        <div className="text-sm">Santa Ana, CA</div>
-                                                        <div className="pt-2">Plan, Design, Build and deliver production ready applications.  Work closely with one other senior developer, and leaders of the company.</div>
-
-                                                        <div className="font-bold text-gray-800 pt-4">Web Developer</div>
-                                                        <div className="text-sm">March 2014 - September 2021 (7 years 6 months)</div>
-                                                        <div className="text-sm">Santa ana, CA</div>
-                                                        <div className="pt-2">Designed, created, and maintained full-stack websites at the enterprise level. Skilled in  CFML, SQL, JavaScript, HTML, and CSS. In-depth knowledge of many third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows. </div>
-
-                                                        <div className="pt-4 font-bold text-gray-800 underline">Nikken International, Inc.</div>
-                                                        <div>7 years 8 months</div>
-
-                                                        <div className="font-bold text-gray-800 pt-4">Web Developer</div>
-                                                        <div className="text-sm">August 2008 - April 2014 (5 years 8 months)</div>
-                                                        <div className="text-sm">Irvine, CA</div>
-                                                        <div className="pt-2">Designed, created, and maintained full-stack websites for consumers world-wide. Skilled in CFML, SQL, JavaScript, HTML, and CSS. In-depth knowledge of many third-party APIs. Worked closely with IT, Marketing, Accounting, and Operations. Established solutions-based team workflows.</div>
-                                                        <div className="font-bold text-gray-800 pt-4">Web Designer</div>
-                                                        <div className="text-sm">August 2006 - August 2008 (2 years 1 month)</div>
-                                                        <div className="text-sm">Irvine, CA</div>
-                                                        <div className="pt-2">Designed, created, and maintained enterprise media and websites. Designed, created, and maintained consumer-based websites. Worked closely with IT and Marketing department. Skilled in Flash, ActionScript, 3d modeling and design, Photoshop, HTML, JavaScript, and CSS.</div>
+                                                <div className="flex flex-col gap-8 p-6 sm:p-10 md:flex-row md:items-center">
+                                                        <div className="min-w-0">
+                                                                <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl print:text-slate-900">
+                                                                        Daniel <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent print:text-emerald-700">Mejia Vera</span>
+                                                                </h1>
+                                                                <p className="mt-3 font-mono text-sm uppercase tracking-wider text-slate-400 sm:text-base">
+                                                                        Web Applications Development Manager <span className="text-emerald-500">/</span> Full-Stack Engineer &amp; Technical Lead
+                                                                </p>
+                                                                <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 font-mono text-sm">
+                                                                        {contacts.map(([k, label, href]) => (
+                                                                                <li key={k}>
+                                                                                        <span className="text-slate-500">{k}:</span>{" "}
+                                                                                        <a className="text-cyan-300 underline-offset-4 hover:text-emerald-300 hover:underline print:text-slate-800" href={href}>
+                                                                                                {label}
+                                                                                        </a>
+                                                                                </li>
+                                                                        ))}
+                                                                </ul>
+                                                        </div>
                                                 </div>
+                                        </header>
+
+                                        <div className="mt-6 space-y-6">
+                                                {/* Summary */}
+                                                <section className="rounded-xl border border-slate-800 bg-slate-950/60 p-6 sm:p-10 print:border-0 print:bg-white">
+                                                        <SectionTitle n="01">Summary</SectionTitle>
+                                                        <p className="text-lg leading-relaxed text-slate-300 print:text-slate-800">{summary}</p>
+                                                </section>
+
+                                                {/* Experience */}
+                                                <section className="rounded-xl border border-slate-800 bg-slate-950/60 p-6 sm:p-10 print:border-0 print:bg-white">
+                                                        <SectionTitle n="02">Experience</SectionTitle>
+                                                        <div className="space-y-12">
+                                                                {experience.map((c) => (
+                                                                        <article key={c.name}>
+                                                                                <h3 className="text-2xl font-bold uppercase tracking-wide text-white print:text-slate-900">{c.name}</h3>
+                                                                                <p className="mt-1 font-mono text-xs text-slate-500">{c.meta}</p>
+                                                                                <ol className="mt-6 space-y-10 border-l border-slate-800 pl-6 print:border-slate-300">
+                                                                                        {c.roles.map((r) => (
+                                                                                                <li key={r.title + r.dates} className="relative">
+                                                                                                        <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-emerald-400 bg-slate-950 shadow-[0_0_10px_rgba(52,211,153,0.6)] print:shadow-none" />
+                                                                                                        <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                                                                                                                <h4 className="text-lg font-semibold text-slate-100 print:text-slate-900">{r.title}</h4>
+                                                                                                                <span className="font-mono text-xs text-emerald-400 print:text-emerald-700">{r.dates}</span>
+                                                                                                        </div>
+                                                                                                        {r.intro && <p className="mt-3 leading-relaxed">{r.intro}</p>}
+                                                                                                        {r.heading && <p className="mt-5 font-mono text-xs uppercase tracking-wider text-slate-500">{"// "}{r.heading}</p>}
+                                                                                                        <ul className="mt-3 space-y-3">
+                                                                                                                {r.bullets.map(([label, text]) => (
+                                                                                                                        <li key={text} className="flex gap-3 leading-relaxed">
+                                                                                                                                <span className="mt-0.5 font-mono text-emerald-500">▹</span>
+                                                                                                                                <span>
+                                                                                                                                        {label && <strong className="font-semibold text-slate-100 print:text-slate-900">{label}: </strong>}
+                                                                                                                                        {text}
+                                                                                                                                </span>
+                                                                                                                        </li>
+                                                                                                                ))}
+                                                                                                        </ul>
+                                                                                                </li>
+                                                                                        ))}
+                                                                                </ol>
+                                                                        </article>
+                                                                ))}
+                                                        </div>
+                                                </section>
+
+                                                {/* Skills */}
+                                                <section className="rounded-xl border border-slate-800 bg-slate-950/60 p-6 sm:p-10 print:border-0 print:bg-white">
+                                                        <SectionTitle n="03">Technical Skills</SectionTitle>
+                                                        <div className="grid gap-6 md:grid-cols-2">
+                                                                {skills.map(([group, items]) => (
+                                                                        <div key={group}>
+                                                                                <h3 className="mb-3 font-mono text-xs uppercase tracking-wider text-slate-400">
+                                                                                        <span className="text-emerald-500">const</span> {group}
+                                                                                </h3>
+                                                                                <ul className="flex flex-wrap gap-2">
+                                                                                        {items.map((s) => (
+                                                                                                <li key={s} className="rounded-md border border-slate-700 bg-slate-900 px-2.5 py-1 font-mono text-xs text-slate-200 transition hover:border-emerald-500/60 hover:text-emerald-300 print:border-slate-300 print:bg-white print:text-slate-800">
+                                                                                                        {s}
+                                                                                                </li>
+                                                                                        ))}
+                                                                                </ul>
+                                                                        </div>
+                                                                ))}
+                                                        </div>
+                                                </section>
+
+                                                {/* Education */}
+                                                <section className="rounded-xl border border-slate-800 bg-slate-950/60 p-6 sm:p-10 print:border-0 print:bg-white">
+                                                        <SectionTitle n="04">Education &amp; Professional Development</SectionTitle>
+                                                        <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                                                                <h3 className="text-lg font-semibold text-slate-100 print:text-slate-900">Self-directed study in Web Design &amp; Programming</h3>
+                                                                <span className="font-mono text-xs text-emerald-400 print:text-emerald-700">2002–2006</span>
+                                                        </div>
+                                                        <p className="mt-3 leading-relaxed">
+                                                                Extensive hands-on professional experience developing and supporting production software, enterprise integrations, and business-critical applications.
+                                                        </p>
+                                                </section>
                                         </div>
 
-
+                                        <footer className="mt-10 text-center font-mono text-xs text-slate-600 print:hidden">
+                                                <span className="text-emerald-500">❯</span> built with Next.js + Tailwind
+                                        </footer>
                                 </div>
                         </main>
                 </>

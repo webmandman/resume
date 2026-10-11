@@ -5,7 +5,8 @@ const config = {
     theme: {
         extend: {
             fontFamily: {
-                monse: ['Monserrat', 'sans-serif']
+                sans: ['Inter', 'sans-serif'],
+                mono: ['"JetBrains Mono"', 'monospace'],
             }
         },
     },

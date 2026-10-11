@@ -1,8 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.zigzag3d {
-    background-color: #ffffff;
-    background-image: linear-gradient(#f5f5ff 1px, transparent 1px), linear-gradient(to right, #f5f5ff 1px, #ffffff 1px);
-    background-size: 20px 20px;
+
+body {
+    background-color: #0a0e14;
+}
+
+.grid-bg {
+    background-image:
+        radial-gradient(ellipse at top, rgba(16, 185, 129, 0.12), transparent 60%),
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 100% 100%, 32px 32px, 32px 32px;
+}
+
+.cursor::after {
+    content: "▋";
+    margin-left: 2px;
+    color: #34d399;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cursor::after { animation: none; }
+}
+
+@media print {
+    body, .grid-bg { background: #fff !important; }
+    .cursor::after { content: none; }
 }
