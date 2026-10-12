@@ -139,7 +139,7 @@ export const education = {
 export const experiencing = [
   {
     label: 'AI-Powered Business Data Assistant',
-    text: 'Experimenting with the user experience of an AI chat assistant connected to enterprise business data through Model Context Protocol (MCP) connectors. Exploring how conversational interfaces can make business information more accessible and enable users to interact with complex data through natural language.',
+    text: 'Experimenting with the user experience of an AI chat assistant connected to enterprise business data through Model Context Protocol (MCP) connectors. Exploring how conversational interfaces can make business information more accessible and enable users to interact with complex data through natural language. Testing a suite of data mcp connectors in Claude live dashboard artifacts.',
   },
   {
     label: 'Generative UI & Interactive AI',
